@@ -31,7 +31,9 @@ When o sistema processa a reserva.
 Then o sistema deve oferecer um desconto especial no valor total da locação.
 
 
+
 Cenário:
+
 Cliente aluga carro utilitário de última hora.
 
 Given que um cliente necessita alugar um carro utilitário.
