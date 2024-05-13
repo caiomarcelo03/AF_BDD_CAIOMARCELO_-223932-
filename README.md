@@ -19,8 +19,7 @@ reservas antecipadas ou demandas de última hora.
 ## Gherkin
 Feature: Locação de Carros
 
-Cenário:
-Cliente reserva carro de luxo com antecedência.
+## Cenário: Cliente reserva carro de luxo com antecedência.
 
 Given que um cliente deseja alugar um carro de luxo.
 
@@ -32,9 +31,7 @@ Then o sistema deve oferecer um desconto especial no valor total da locação.
 
 
 
-Cenário:
-
-Cliente aluga carro utilitário de última hora.
+## Cenário: Cliente aluga carro utilitário de última hora.
 
 Given que um cliente necessita alugar um carro utilitário.
 
