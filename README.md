@@ -19,19 +19,21 @@ reservas antecipadas ou demandas de última hora.
 ## Gherkin
 Feature: Locação de Carros
 
-Cenário: Cliente reserva carro de luxo com antecedência
-    Given que um cliente deseja alugar um carro de luxo
-    And que o cliente realiza a reserva com antecedência de pelo menos uma semana
-    When o sistema processa a reserva
-    Then o sistema deve oferecer um desconto especial no valor total da locação
+Cenário:
+Cliente reserva carro de luxo com antecedência
+Given que um cliente deseja alugar um carro de luxo
+And que o cliente realiza a reserva com antecedência de pelo menos uma semana
+When o sistema processa a reserva
+Then o sistema deve oferecer um desconto especial no valor total da locação
 
-Cenário: Cliente aluga carro utilitário de última hora
-    Given que um cliente necessita alugar um carro utilitário
-    And que não há reserva prévia
-    When o sistema verifica a disponibilidade de veículos
-    And o sistema processa a locação rapidamente
-    Then o sistema deve encontrar um veículo disponível
-    And o sistema pode aplicar um custo um pouco mais elevado devido à demanda urgente
+Cenário:
+Cliente aluga carro utilitário de última hora
+Given que um cliente necessita alugar um carro utilitário
+And que não há reserva prévia
+When o sistema verifica a disponibilidade de veículos
+And o sistema processa a locação rapidamente
+Then o sistema deve encontrar um veículo disponível
+And o sistema pode aplicar um custo um pouco mais elevado devido à demanda urgente
 
 ## Descrição
 O Gherkin é uma linguagem de especificação usada principalmente em práticas de BDD (Behavior-Driven Development) e é projetada para ser legível tanto por seres humanos quanto por máquinas. É uma linguagem de formatação simples que descreve o comportamento do software em termos de cenários
